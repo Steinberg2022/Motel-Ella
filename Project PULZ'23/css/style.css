@@ -1,0 +1,503 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/*First Sight*/
+
+.hero{
+    color: rgb(0, 52, 59);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url(../img/Rotti.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+
+}
+
+.head{
+    border: 20px lightgoldenrodyellow solid;
+    background-image:linear-gradient(rgba(255, 253, 198, 0.409),rgba(151, 253, 129, 0.591));
+    
+   transition-duration: 200ms;
+}
+
+
+
+/*Food Items*/
+
+.main{
+    width: 100%;
+    height: 160vh;
+    padding-bottom: 90px;
+    background-image: linear-gradient(#061de3,#e306ca);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container{
+    margin-left: 50px;
+    width: 300px;
+    height: 450px;
+    perspective: 800px;
+}
+
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: all 1500ms ease-in-out;
+    transform-style: preserve-3d; 
+    margin-top: 70px;
+}
+
+.back{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px black;
+    border: none;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    font-size: 5px;
+    color: #000958;
+    background-color: aquamarine;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    transition: all 500ms ease-in-out;
+}
+button:hover{
+    background-color: rgb(0, 74, 74);
+    color: #d5f9ff;
+    box-shadow: 0 0 12px #d5f9ff;
+}
+
+
+/*1st Item*/
+
+.front{
+    background-image: url(../img/card1.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px black;
+    border: none;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+/*2nd Item*/
+
+.front1{
+    background-image: url(../img/card2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px black;
+    border: none;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+/*3rd Item*/
+
+.front2{
+    background-image: url(../img/cars3.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px black;
+    border: none;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+/*4th Item*/
+
+.front3{
+    background-image: url(../img/card4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px black;
+    border: none;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+/*5th Item*/
+
+.front4{
+    background-image: url(../img/card5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px black;
+    border: none;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+/*6th Item*/
+
+.front5{
+    background-image: url(../img/card6.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px black;
+    border: none;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+/*Place Situated*/
+
+.map{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 70vh;
+    background-size: cover;
+    background-position: bottom;
+    border: 20px #061de3 solid;
+    background-image: url(../img/Map.png);
+}
+
+#situation{
+    border: 7px #000958 solid;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 30px 30px;
+    border-radius: 50px;
+    color: rgb(53, 0, 0);
+    cursor: pointer;
+
+}
+
+
+
+.situation,.map{
+    transition: all 500ms ease-in-out;
+}
+
+.media{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 255, 195, 0.639),rgba(0, 238, 255, 0.543));
+    gap: 100px;
+}
+
+a{
+    margin-top: 20px;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width:4000px){
+    .main{
+        height: auto;
+    }
+    .container{
+        width: 700px;
+        height: 900px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 250px;
+        perspective: 1300px;
+    }
+    .back{
+        font-size: 55px;
+    }
+    
+    button{
+        padding: 30px 40px;
+        font-size: 35px;
+    }
+    
+}
+
+@media only screen and (max-width:2200px){
+    .main{
+        height: auto;
+    }
+    .container{
+        height: 500px;
+        width: 400px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    .back{
+        font-size: 27px;
+    }
+
+    button{
+        padding: 30px 40px;
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:1300px){
+    .main{
+        grid-template-columns: 1fr 1fr;
+        font-size: 25px;
+        height: auto;
+        gap: 35px;
+    }
+    .container{
+        margin: auto;
+        margin-bottom: 70px;
+        width: 350px;
+    }
+    .map{
+        justify-content: left;
+        align-items: start;
+    }
+    button{
+        padding:17px 20px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .main{
+        grid-template-columns: 1fr 1fr ;
+        font-size: 23px;
+        height: auto;
+        
+    }
+    .container{
+        width: 300px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    .map{
+        justify-content: left;
+        align-items: start;
+    }
+    button{
+        padding: 20px 20px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .container{
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 100px;
+        perspective: 800px;
+    }
+    .main{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        
+    }
+    .front{
+        background-position: bottom;
+    }
+
+    .back{
+        font-size: 23px;
+        gap: 10px;
+    }
+
+    .hero{
+        font-size: 50px;
+        width: 100%;
+    }
+    .map{
+        justify-content: center;
+        align-items: start;
+    }
+    .media{
+        
+        display: flex;
+        gap: 42px;
+    }
+    button{
+        margin-top: 10px;
+        font-size: 23px;
+    }
+}
+
+
+@media only screen and (max-width:550px){
+    .container{
+        width: 300px;
+        height: 200px;
+        perspective: 800px;
+        margin: auto;
+        margin-bottom: 50px;
+        perspective: 550px;
+    }
+    .main{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        
+    }
+    .front{
+        background-position: bottom;
+    }
+
+    .back{
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    .hero{
+        font-size: 26px;
+        width: 100%;
+    }
+    .media{
+        display: flex;
+        gap: 20px;
+    }
+    .map{
+        justify-content: center;
+        align-items: start;
+    }
+    button{
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:460px){
+    .container{
+        width: 300px;
+        height: 200px;
+        perspective: 800px;
+        margin: auto;
+        margin-bottom: 50px;
+        perspective: 550px;
+    }
+    .main{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        
+    }
+    .front{
+        background-position: bottom;
+    }
+
+    .back{
+        font-size: 15px;
+        gap: 1px;
+    }
+
+    .hero{
+        font-size: 26px;
+        width: 100%;
+    }
+    .media{
+        display: flex;
+        gap: 1px;
+    }
+    .map{
+        justify-content: center;
+        align-items: start;
+    }
+    button{
+        padding: 10px 10px;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:390px){
+    .container{
+        width: 200px;
+        height: 200px;
+        perspective: 800px;
+        margin-top: 50px;
+    }
+    .main{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        
+    }
+    .front{
+        background-position: bottom;
+    }
+
+    .back{
+        font-size: 14px;
+        gap: 1px;
+    }
+
+    .hero{
+        width: 100%;
+    
+    }
+    .media{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+    }
+    button{
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+}
