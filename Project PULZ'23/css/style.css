@@ -197,7 +197,7 @@ button:hover{
 
 /*Place Situated*/
 
-.map{
+#map{
     display: flex;
     align-items: center;
     justify-content: left;
